@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 
-import { API } from './config'
-import Exhibitions from './Exhibitions'
+import { API } from '../../config'
+import Header from '../header/Header'
+import Exhibitions from '../exhibitions/Exhibitions'
 
 class App extends Component {
   constructor(){
@@ -49,6 +50,7 @@ class App extends Component {
 
     return (
       <div>
+        <Header />
         {exhibitionsWithProps}
       </div>
     )

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import preloaderImage from './cooperhewitt.jpg'
 
-
 class Exhibitions extends Component {
     constructor(props) {
         super(props)
@@ -44,10 +43,12 @@ class Exhibitions extends Component {
         //   })
 
         return (
-            <figure>
-                <h1>Yello Sucka</h1>
-                <img src={preloaderImage} alt="" onLoad={() => console.log('loaded')} />
-            </figure>
+            <div>
+                <h1>Hello Sucka</h1>
+                <figure>
+                    <img src={preloaderImage} alt="" onLoad={() => console.log('loaded')} />
+                </figure>
+            </div>
         )
     }
 }
