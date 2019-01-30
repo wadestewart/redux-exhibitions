@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 
+import './Exhibitions.css'
 import preloaderImage from './cooperhewitt.jpg'
 
 class Exhibitions extends Component {
@@ -43,11 +44,17 @@ class Exhibitions extends Component {
         //   })
 
         return (
-            <div>
-                <h1>Hello Sucka</h1>
-                <figure>
-                    <img src={preloaderImage} alt="" onLoad={() => console.log('loaded')} />
-                </figure>
+            <div className="row">
+                <div className="col m4">
+                    <div className="card small">
+                        <div className="card-image">
+                            <img src={preloaderImage} alt="" onLoad={() => console.log('loaded')} />
+                        </div>
+                        <div className="card-content">
+                            <h1>Hello Sucka</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
